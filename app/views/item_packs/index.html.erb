@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Item Packs</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render @item_packs %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item pack', new_item_pack_path %>
